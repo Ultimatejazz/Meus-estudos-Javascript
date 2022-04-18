@@ -6,15 +6,15 @@ class ClassName {
 Class Example:
 class Car {
   constructor(name, year) {
-    this.name = name;
-    this.year = year;
+    this.nameCar = name;
+    this.yearCar = year;
   }
 }
 let myCar1 = new Car("Ford", 2014);
 let myCar2 = new Car("Audi", 2019);
 
 console.log(myCar1);
-
+-------------------------------------------------------------------------
 Method Syntax:
 class ClassName {
   constructor() { ... }
@@ -26,17 +26,16 @@ class ClassName {
 Method Example:
 class Car {
   constructor(name, year) {
-    this.name = name;
-    this.year = year;
+    this.nameCar = name;
+    this.yearCar = year;
   }
   age() {
     let date = new Date();
-    return date.getFullYear() - this.year;
+    return date.getFullYear() - this.yearCar;
   }
 }
 
 let myCar = new Car("Ford", 2014);
-document.getElementById("demo").innerHTML =
-"My car is " + myCar.age() + " years old.";
+console.log("My car is " + myCar.age() + " years old.");
 
 
